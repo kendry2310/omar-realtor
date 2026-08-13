@@ -1,15 +1,4 @@
 {
-  "hero": {
-    "src": "assets/img/hero.webp",
-    "title": "Steel and Glass House Palm Springs Architectual View",
-    "creator": "Chase Lindberg Photography",
-    "creator_url": "https://www.flickr.com/photos/48355364@N08",
-    "license": "by",
-    "license_version": "2.0",
-    "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "foreign_landing_url": "https://www.flickr.com/photos/48355364@N08/4425156542",
-    "source": "flickr"
-  },
   "featured-01": {
     "src": "assets/img/featured-01.webp",
     "title": "Plage Colección My Wall",
