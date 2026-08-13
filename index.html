@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[Nombre del Realtor] · Bienes Raíces Residenciales en Florida</title>
-  <meta name="description" content="[Nombre del Realtor] — bienes raíces residenciales en [Área de Servicio], Florida. Propiedades seleccionadas, acompañamiento cercano en cada compra o venta." />
+  <title>Omar Realtor · Bienes Raíces Residenciales en Florida</title>
+  <meta name="description" content="Omar Realtor — bienes raíces residenciales en Tampa, Miami, Palm Beach y Hialeah, Florida. Propiedades seleccionadas, acompañamiento cercano en cada compra o venta." />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="[Nombre del Realtor] · Bienes Raíces Residenciales en Florida" />
-  <meta property="og:description" content="Propiedades seleccionadas y acompañamiento cercano en [Área de Servicio], Florida." />
+  <meta property="og:title" content="Omar Realtor · Bienes Raíces Residenciales en Florida" />
+  <meta property="og:description" content="Propiedades seleccionadas y acompañamiento cercano en Tampa, Miami, Palm Beach y Hialeah, Florida." />
   <meta property="og:image" content="assets/img/hero.webp" />
 
   <!-- Fonts -->
@@ -21,16 +21,16 @@
   <!-- Hero image priority -->
   <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high" />
 
-  <link rel="stylesheet" href="styles.css?v=20260813" />
+  <link rel="stylesheet" href="styles.css?v=20260813b" />
 
   <!-- SEO local: schema.org RealEstateAgent — placeholders, completar con datos reales -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "name": "[Nombre del Realtor]",
+    "name": "Omar Realtor",
     "worksFor": { "@type": "Organization", "name": "[Nombre del Brokerage]" },
-    "areaServed": ["[Área de Servicio 1]", "[Área de Servicio 2]", "[Área de Servicio 3]"],
+    "areaServed": ["Tampa, FL", "Miami, FL", "Palm Beach, FL", "Hialeah, FL"],
     "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" },
     "telephone": "[(XXX) XXX-XXXX]",
     "url": "https://example.com"
@@ -49,11 +49,11 @@
   <!-- ============ NAVIGATION ============ -->
   <header class="nav" data-nav>
     <div class="nav-inner">
-      <a class="nav-brand" href="#top">[Nombre del Realtor]</a>
+      <a class="nav-brand" href="#top">Omar Realtor</a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a class="nav-link" href="#propiedades">Propiedades</a>
         <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-        <a class="nav-link" href="#areas">Áreas</a>
+        <a class="nav-link" href="#areas">Ciudades</a>
         <a class="nav-link" href="#proceso">Proceso</a>
         <a class="nav-link" href="#contacto">Contacto</a>
       </nav>
@@ -68,7 +68,7 @@
   <nav id="nav-mobile" class="nav-mobile" data-nav-mobile aria-hidden="true" aria-label="Navegación móvil">
     <a class="nav-mobile-link" href="#propiedades">Propiedades</a>
     <a class="nav-mobile-link" href="#sobre-mi">Sobre mí</a>
-    <a class="nav-mobile-link" href="#areas">Áreas</a>
+    <a class="nav-mobile-link" href="#areas">Ciudades</a>
     <a class="nav-mobile-link" href="#proceso">Proceso</a>
     <a class="nav-mobile-link" href="#contacto">Contacto</a>
     <a class="btn btn-mobile-cta" href="#contacto">Contactar</a>
@@ -86,7 +86,7 @@
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-grain" aria-hidden="true"></div>
       <div class="hero-inner">
-        <h1 class="hero-title">[Nombre del Realtor]</h1>
+        <h1 class="hero-title">Omar Realtor</h1>
         <p class="hero-sub">Bienes raíces residenciales en Florida.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#propiedades">Ver propiedades</a>
@@ -123,60 +123,65 @@
       <div class="bento">
         <article class="card card-property" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
-          <div class="card-media">
+          <button type="button" class="card-media" data-lightbox="properties" data-lightbox-caption="Residencia Contemporánea — Tampa, FL">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
             <img class="card-img" src="assets/img/featured-02.webp" alt="Fachada de vivienda blanca de estilo mediterráneo — fotografía de referencia" loading="lazy" decoding="async" />
-          </div>
+          </button>
           <div class="card-meta">
             <h3 class="card-title">Residencia Contemporánea</h3>
-            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-loc">Tampa, FL</p>
             <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
           </div>
         </article>
 
         <article class="card card-property" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
-          <div class="card-media">
+          <button type="button" class="card-media" data-lightbox="properties" data-lightbox-caption="Villa con Piscina Infinita — Palm Beach, FL">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
             <img class="card-img" src="assets/img/featured-04.webp" alt="Piscina infinita frente a residencia mediterránea — fotografía de referencia" loading="lazy" decoding="async" />
-          </div>
+          </button>
           <div class="card-meta">
             <h3 class="card-title">Villa con Piscina Infinita</h3>
-            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-loc">Palm Beach, FL</p>
             <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
           </div>
         </article>
 
         <article class="card card-property" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
-          <div class="card-media">
+          <button type="button" class="card-media" data-lightbox="properties" data-lightbox-caption="Cocina de Autor — Miami, FL">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
             <img class="card-img" src="assets/img/featured-03.webp" alt="Cocina moderna con isla de mármol — fotografía de referencia" loading="lazy" decoding="async" />
-          </div>
+          </button>
           <div class="card-meta">
             <h3 class="card-title">Cocina de Autor</h3>
-            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-loc">Miami, FL</p>
             <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
           </div>
         </article>
 
         <article class="card card-property" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
-          <div class="card-media">
+          <button type="button" class="card-media" data-lightbox="properties" data-lightbox-caption="Interior Minimalista — Hialeah, FL">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
             <img class="card-img" src="assets/img/featured-01.webp" alt="Sala de estar minimalista con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
-          </div>
+          </button>
           <div class="card-meta">
             <h3 class="card-title">Interior Minimalista</h3>
-            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-loc">Hialeah, FL</p>
             <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
           </div>
         </article>
 
         <article class="card card-property" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
-          <div class="card-media">
+          <button type="button" class="card-media" data-lightbox="properties" data-lightbox-caption="Suite Principal — Miami, FL">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
             <img class="card-img" src="assets/img/featured-05.webp" alt="Dormitorio principal con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
-          </div>
+          </button>
           <div class="card-meta">
             <h3 class="card-title">Suite Principal</h3>
-            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-loc">Miami, FL</p>
             <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
           </div>
         </article>
@@ -190,10 +195,13 @@
       <div class="about-figure" data-reveal-mask>
         <span class="ref-badge">Imagen de referencia</span>
         <img src="assets/img/portrait-realtor.webp" alt="Retrato profesional — fotografía de referencia, a sustituir por foto real" loading="lazy" decoding="async" />
+        <button type="button" class="figure-trigger" data-lightbox="portrait" data-lightbox-src="assets/img/portrait-realtor.webp" data-lightbox-caption="Omar Realtor">
+          <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+        </button>
       </div>
       <div class="about-text">
         <span class="eyebrow" data-reveal>Sobre mí</span>
-        <h2 class="section-title" data-reveal>[Nombre del Realtor]</h2>
+        <h2 class="section-title" data-reveal>Omar Realtor</h2>
         <span class="ref-badge ref-badge--inline" data-reveal>Contenido provisional</span>
         <p class="about-bio" data-reveal>Un enfoque personal, atento a los detalles y a las personas detrás de cada decisión inmobiliaria. Cada propiedad se presenta con la misma dedicación: la de un hogar propio.</p>
         <dl class="credentials" data-reveal>
@@ -205,31 +213,37 @@
       </div>
     </section>
 
-    <!-- ============ AREAS SERVED ============ -->
+    <!-- ============ AREAS SERVED / CITIES ============ -->
     <section class="section-flush" id="areas">
       <div class="section-head section-head--pad" data-reveal>
-        <span class="eyebrow">Áreas de servicio</span>
-        <h2 class="section-title">Dónde trabajamos</h2>
+        <span class="eyebrow">Ciudades de servicio</span>
+        <h2 class="section-title">Ciudades donde trabajamos</h2>
       </div>
       <div class="areas">
-        <a class="area-card" href="#contacto" data-reveal>
-          <span class="ref-badge">Imagen de referencia</span>
-          <img class="area-img" src="assets/img/areas-01.webp" alt="Palmeras contra cielo azul — fotografía de referencia" loading="lazy" decoding="async" />
+        <button type="button" class="area-card" data-reveal data-lightbox="areas" data-lightbox-caption="Tampa, FL">
+          <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          <img class="area-img" src="assets/img/city-tampa.webp" alt="Tampa, Florida — skyline junto al río Hillsborough al atardecer" loading="lazy" decoding="async" />
           <span class="area-overlay" aria-hidden="true"></span>
-          <span class="area-name">[Área de Servicio 1]</span>
-        </a>
-        <a class="area-card" href="#contacto" data-reveal>
-          <span class="ref-badge">Imagen de referencia</span>
-          <img class="area-img" src="assets/img/areas-02.webp" alt="Marina con veleros — fotografía de referencia" loading="lazy" decoding="async" />
+          <span class="area-name">Tampa<span class="area-rule" aria-hidden="true"></span></span>
+        </button>
+        <button type="button" class="area-card" data-reveal data-lightbox="areas" data-lightbox-caption="Miami, FL">
+          <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          <img class="area-img" src="assets/img/city-miami.webp" alt="Miami, Florida — skyline sobre Biscayne Bay" loading="lazy" decoding="async" />
           <span class="area-overlay" aria-hidden="true"></span>
-          <span class="area-name">[Área de Servicio 2]</span>
-        </a>
-        <a class="area-card" href="#contacto" data-reveal>
-          <span class="ref-badge">Imagen de referencia</span>
-          <img class="area-img" src="assets/img/areas-03.webp" alt="Vista aérea de costa — fotografía de referencia" loading="lazy" decoding="async" />
+          <span class="area-name">Miami<span class="area-rule" aria-hidden="true"></span></span>
+        </button>
+        <button type="button" class="area-card" data-reveal data-lightbox="areas" data-lightbox-caption="Palm Beach, FL">
+          <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          <img class="area-img" src="assets/img/city-palmbeach.webp" alt="Palm Beach, Florida — vista aérea costera de residencias de lujo" loading="lazy" decoding="async" />
           <span class="area-overlay" aria-hidden="true"></span>
-          <span class="area-name">[Área de Servicio 3]</span>
-        </a>
+          <span class="area-name">Palm Beach<span class="area-rule" aria-hidden="true"></span></span>
+        </button>
+        <button type="button" class="area-card" data-reveal data-lightbox="areas" data-lightbox-caption="Hialeah, FL">
+          <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          <img class="area-img" src="assets/img/city-hialeah.webp" alt="Hialeah, Florida — puente histórico junto al canal" loading="lazy" decoding="async" />
+          <span class="area-overlay" aria-hidden="true"></span>
+          <span class="area-name">Hialeah<span class="area-rule" aria-hidden="true"></span></span>
+        </button>
       </div>
     </section>
 
@@ -269,14 +283,23 @@
         <figure class="gallery-item gallery-item--tall" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
           <img src="assets/img/gallery-01.webp" alt="Detalle arquitectónico de cubierta al atardecer — fotografía de referencia" loading="lazy" decoding="async" />
+          <button type="button" class="figure-trigger" data-lightbox="gallery" data-lightbox-src="assets/img/gallery-01.webp" data-lightbox-caption="Detalle arquitectónico">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          </button>
         </figure>
         <figure class="gallery-item" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
           <img src="assets/img/gallery-02.webp" alt="Comedor moderno con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
+          <button type="button" class="figure-trigger" data-lightbox="gallery" data-lightbox-src="assets/img/gallery-02.webp" data-lightbox-caption="Comedor moderno">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          </button>
         </figure>
         <figure class="gallery-item" data-reveal>
           <span class="ref-badge">Imagen de referencia</span>
           <img src="assets/img/gallery-03.webp" alt="Fachada de vidrio moderna al atardecer — fotografía de referencia" loading="lazy" decoding="async" />
+          <button type="button" class="figure-trigger" data-lightbox="gallery" data-lightbox-src="assets/img/gallery-03.webp" data-lightbox-caption="Fachada de vidrio moderna">
+            <span class="expand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg></span>
+          </button>
         </figure>
       </div>
       <!-- Testimonials: sección omitida intencionalmente — se incorporará cuando existan testimonios reales de clientes -->
@@ -333,7 +356,7 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <p class="footer-name">[Nombre del Realtor]</p>
+        <p class="footer-name">Omar Realtor</p>
         <p class="footer-brokerage">[Nombre del Brokerage] · FL Lic. #[XXXXXX]</p>
       </div>
       <nav class="footer-social" aria-label="Redes sociales">
@@ -352,10 +375,29 @@
       <p>Igualdad de Oportunidad de Vivienda · Equal Housing Opportunity. Cada oficina es de propiedad y operación independiente.</p>
     </div>
     <div class="footer-bottom">
-      <p>© <span data-year>2026</span> [Nombre del Realtor]. Todos los derechos reservados.</p>
+      <p>© <span data-year>2026</span> Omar Realtor. Todos los derechos reservados.</p>
       <p class="footer-credits">Fotografía de referencia bajo licencias Creative Commons. <a href="creditos.html">Créditos fotográficos →</a></p>
     </div>
   </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" data-lightbox-root role="dialog" aria-modal="true" aria-label="Visor de fotografías" aria-hidden="true">
+    <div class="lightbox-scrim" data-lightbox-close></div>
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" data-lightbox-img alt="" />
+      <p class="lightbox-caption" data-lightbox-caption></p>
+      <p class="lightbox-counter" data-lightbox-counter></p>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="Foto siguiente">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
 
   <!-- libs first (defer keeps order) -->
   <script defer src="lib/gsap.min.js"></script>
@@ -364,6 +406,6 @@
   <script defer src="lib/manifest.js"></script>
 
   <!-- entry point -->
-  <script defer src="main.js?v=20260813"></script>
+  <script defer src="main.js?v=20260813b"></script>
 </body>
 </html>

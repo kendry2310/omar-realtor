@@ -8,7 +8,7 @@ web
 
 ## Users
 
-Buyers and sellers of residential property in [Área de Servicio], Florida, evaluating a Realtor from the website alone before ever speaking to them — deciding whether this person feels trustworthy, exclusive, and worth a phone call. Secondary audience: people researching the Realtor by name after a referral.
+Buyers and sellers of residential property in Tampa, Miami, Palm Beach, and Hialeah, Florida, evaluating a Realtor from the website alone before ever speaking to them — deciding whether this person feels trustworthy, exclusive, and worth a phone call. Secondary audience: people researching the Realtor by name after a referral.
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ A one-page marketing site for a Florida residential Realtor. The site exists to 
 
 ## Operating Context
 
-Single page, no backend, no MLS/IDX integration yet (architecture prepared for it — see `DESIGN.md`). Visitor arrives, sees a placeholder Hero (reserved for a future 21st.dev component), scrolls through featured properties → about the Realtor → areas served → buying/selling process → gallery → contact form. No scheduling system; the contact form currently only simulates submission client-side.
+Single page, no backend, no MLS/IDX integration yet (architecture prepared for it — see `DESIGN.md`). Visitor arrives at the cinematic Hero, scrolls through featured properties → about the Realtor → areas served (Tampa, Miami, Palm Beach, Hialeah) → buying/selling process → gallery → contact form. Property, area, and gallery photos open in a lightbox for a closer look. No scheduling system; the contact form currently only simulates submission client-side.
 
 ## Capabilities and Constraints
 
@@ -32,13 +32,13 @@ Single page, no backend, no MLS/IDX integration yet (architecture prepared for i
 
 ## Brand Commitments
 
-- Name, brokerage, license number, service areas, specialization, bio, and all contact details are **explicitly bracketed placeholders** (`[Nombre del Realtor]`, `[Nombre del Brokerage]`, `FL #[XXXXXX]`, `[Ciudad, FL]`, etc.) — none of it is real, none of it should be mistaken for real. Fill in from the client before launch.
+- Name ("Omar Realtor") and service areas (Tampa, Miami, Palm Beach, Hialeah) are confirmed real, client-provided. Brokerage, license number, specialization, bio, and contact details remain **explicitly bracketed placeholders** (`[Nombre del Brokerage]`, `FL #[XXXXXX]`, etc.) — fill in from the client before launch.
 - Visual identity: warm ivory + near-black base, brass/sun accent as the dominant color, a deliberately rare dusk-teal secondary accent (used only in the Areas Served hover state) — Fraunces display serif + Inter body + IBM Plex Mono for data/labels. Full rationale in `DESIGN.md`.
 - No invented commercial claims: no fabricated years of experience, transaction counts, awards, or sales figures anywhere on the site, including in placeholder copy.
 
 ## Evidence on Hand
 
-- **Photography is entirely stock** (Openverse — Wikimedia/Flickr/StockSnap/Rawpixel, CC0/BY/BY-SA licensed, verified individually to exclude non-commercial and no-derivative licenses). None of it depicts the real Realtor, their real listings, or real Florida properties. Every placeholder photo carries a visible "Imagen de referencia" badge in the UI. Full attribution in `creditos.html` / `assets/credits.json`. Must be swapped for the client's real photography before the site reads as authentic.
+- **Photography is entirely stock** (Openverse — Wikimedia/Flickr/StockSnap/Rawpixel, CC0/BY/BY-SA licensed, verified individually to exclude non-commercial and no-derivative licenses). The four Areas Served photos are genuine, correctly-identified photography of Tampa, Miami, Palm Beach, and Hialeah — real cities, real images — but still not the Realtor's own photography. Everything else (hero, featured properties, gallery, portrait) is generic stock standing in for real listings/photos and carries a visible "Imagen de referencia" badge in the UI. Full attribution in `creditos.html` / `assets/credits.json`. Must be swapped for the client's real photography before the site reads as authentic.
 - **Portrait is a generic stock headshot** (`assets/img/portrait-realtor.webp`), not the actual Realtor. Replace with a real professional photo before launch.
 - **Contact info is a placeholder, confirmed not real**: phone, email, and office address are all bracketed. Do not treat as functioning contact details.
 - **No testimonials exist** — the section was omitted rather than fabricated; add it only once real reviews are collected.

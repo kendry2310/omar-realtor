@@ -1,5 +1,5 @@
 ---
-name: "[Nombre del Realtor] — Bienes Raíces Florida"
+name: "Omar Realtor — Bienes Raíces Florida"
 description: Web editorial premium para un Realtor residencial de Florida, tratada como una revista de arquitectura que además vende propiedades.
 colors:
   bg: "#FAF7F2"
@@ -42,7 +42,7 @@ components:
     typography: "{typography.mono}"
 ---
 
-# Design System: [Nombre del Realtor] — Bienes Raíces Florida
+# Design System: Omar Realtor — Bienes Raíces Florida
 
 ## Overview
 

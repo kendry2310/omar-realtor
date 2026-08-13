@@ -235,6 +235,128 @@
     });
   }
 
+  /* ---------------- Lightbox (properties / areas / gallery / portrait) ---------------- */
+  function initLightbox() {
+    var root = $("[data-lightbox-root]");
+    if (!root) return;
+
+    var scrim = $(".lightbox-scrim", root);
+    var imgEl = $("[data-lightbox-img]", root);
+    var captionEl = $("[data-lightbox-caption]", root);
+    var counterEl = $("[data-lightbox-counter]", root);
+    var closeEls = $$("[data-lightbox-close]", root);
+    var closeBtn = $(".lightbox-close", root);
+    var prevBtn = $("[data-lightbox-prev]", root);
+    var nextBtn = $("[data-lightbox-next]", root);
+
+    // Build one ordered group per data-lightbox value, in DOM order.
+    var groups = {};
+    $$("[data-lightbox]").forEach(function (trigger) {
+      var group = trigger.dataset.lightbox;
+      var src = trigger.dataset.lightboxSrc;
+      if (!src) {
+        var innerImg = trigger.querySelector("img");
+        if (innerImg) src = innerImg.currentSrc || innerImg.src;
+      }
+      if (!src) return;
+      if (!groups[group]) groups[group] = [];
+      var index = groups[group].length;
+      groups[group].push({ src: src, caption: trigger.dataset.lightboxCaption || "" });
+      trigger.dataset.lightboxIndex = String(index);
+      trigger.addEventListener("click", function () {
+        open(group, index, trigger);
+      });
+    });
+
+    var activeGroup = null;
+    var activeIndex = 0;
+    var lastFocused = null;
+
+    function show(i) {
+      var items = groups[activeGroup];
+      if (!items || !items.length) return;
+      activeIndex = (i + items.length) % items.length;
+      var item = items[activeIndex];
+      imgEl.classList.remove("is-loaded");
+      imgEl.src = item.src;
+      imgEl.alt = item.caption || "";
+      if (captionEl) captionEl.textContent = item.caption || "";
+      if (counterEl) counterEl.textContent = items.length > 1 ? (activeIndex + 1) + " / " + items.length : "";
+      root.classList.toggle("is-single", items.length <= 1);
+      if (imgEl.complete) imgEl.classList.add("is-loaded");
+    }
+
+    function open(group, index, trigger) {
+      if (!groups[group] || !groups[group].length) return;
+      activeGroup = group;
+      lastFocused = trigger || document.activeElement;
+      show(index);
+      root.setAttribute("aria-hidden", "false");
+      document.documentElement.classList.add("lightbox-open");
+      document.body.classList.add("lightbox-open");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function close() {
+      if (root.getAttribute("aria-hidden") === "true") return;
+      root.setAttribute("aria-hidden", "true");
+      document.documentElement.classList.remove("lightbox-open");
+      document.body.classList.remove("lightbox-open");
+      imgEl.removeAttribute("src");
+      imgEl.classList.remove("is-loaded");
+      if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+      lastFocused = null;
+    }
+
+    function next() { show(activeIndex + 1); }
+    function prev() { show(activeIndex - 1); }
+
+    imgEl.addEventListener("load", function () { imgEl.classList.add("is-loaded"); });
+    closeEls.forEach(function (el) { el.addEventListener("click", close); });
+    if (nextBtn) nextBtn.addEventListener("click", next);
+    if (prevBtn) prevBtn.addEventListener("click", prev);
+
+    var stageEl = $(".lightbox-stage", root);
+    if (stageEl) {
+      // Clicking the stage's own empty padding (not the image/caption/counter
+      // inside it) also counts as "click outside" and closes.
+      stageEl.addEventListener("click", function (e) {
+        if (e.target === stageEl) close();
+      });
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (root.getAttribute("aria-hidden") !== "false") return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") next();
+      else if (e.key === "ArrowLeft") prev();
+      else if (e.key === "Tab") {
+        // Simple focus trap among the lightbox's own controls.
+        var focusable = [prevBtn, nextBtn, closeBtn].filter(function (el) {
+          return el && el.offsetParent !== null;
+        });
+        if (!focusable.length) return;
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+
+    // Touch swipe (mobile): horizontal drag past threshold moves prev/next.
+    var touchX = 0, touchY = 0;
+    if (stageEl) {
+      stageEl.addEventListener("touchstart", function (e) {
+        touchX = e.changedTouches[0].clientX;
+        touchY = e.changedTouches[0].clientY;
+      }, { passive: true });
+      stageEl.addEventListener("touchend", function (e) {
+        var dx = e.changedTouches[0].clientX - touchX;
+        var dy = e.changedTouches[0].clientY - touchY;
+        if (Math.abs(dx) > 48 && Math.abs(dy) < 80) { if (dx < 0) next(); else prev(); }
+      }, { passive: true });
+    }
+  }
+
   function boot() {
     safe(initYear, "initYear");
     safe(initNav, "initNav");
@@ -242,6 +364,7 @@
     safe(initCursor, "initCursor");
     safe(initSplitText, "initSplitText");
     safe(initReveals, "initReveals");
+    safe(initLightbox, "initLightbox");
     safe(initTilt, "initTilt");
     safe(initAnchorScroll, "initAnchorScroll");
     safe(initForm, "initForm");

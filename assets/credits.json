@@ -76,38 +76,49 @@
     "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=187250325",
     "source": "wikimedia"
   },
-  "areas-01": {
-    "src": "assets/img/areas-01.webp",
-    "title": "Free palm tree, blue sky",
-    "creator": "Unknown",
-    "creator_url": null,
-    "license": "cc0",
-    "license_version": "1.0",
-    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "foreign_landing_url": "https://www.rawpixel.com/image/5916523/photo-image-public-domain-plant-palm-tree",
-    "source": "rawpixel"
+  "city-tampa": {
+    "src": "assets/img/city-tampa.webp",
+    "title": "Tampa Skyline",
+    "creator": "Sonny SideUp",
+    "creator_url": "https://www.flickr.com/people/97705886@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=4237456",
+    "source": "wikimedia"
   },
-  "areas-02": {
-    "src": "assets/img/areas-02.webp",
-    "title": "Sailboats dock daytime",
-    "creator": "Unknown",
-    "creator_url": null,
-    "license": "cc0",
-    "license_version": "1.0",
-    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "foreign_landing_url": "https://www.rawpixel.com/image/6037231/photo-image-public-domain-ocean-water",
-    "source": "rawpixel"
+  "city-miami": {
+    "src": "assets/img/city-miami.webp",
+    "title": "Biscayne Bay south",
+    "creator": "Averette",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:Averette",
+    "license": "by",
+    "license_version": "3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=4066638",
+    "source": "wikimedia"
   },
-  "areas-03": {
-    "src": "assets/img/areas-03.webp",
-    "title": "Beach Aerial",
-    "creator": "Humphrey Muleba",
-    "creator_url": "https://burst.shopify.com/@goodcitizen",
-    "license": "cc0",
-    "license_version": "1.0",
-    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "foreign_landing_url": "https://stocksnap.io/photo/beach-aerial-NPCFR4GDNF",
-    "source": "stocksnap"
+  "city-palmbeach": {
+    "src": "assets/img/city-palmbeach.webp",
+    "title": "Palm Beach Florida Aerial 2011",
+    "creator": "Michael Kagdis",
+    "creator_url": "http://www.thepalmbeachproper.com/authorPage.cfm?page=10&authorID=114",
+    "license": "by-sa",
+    "license_version": "3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=42147898",
+    "source": "wikimedia"
+  },
+  "city-hialeah": {
+    "src": "assets/img/city-hialeah.webp",
+    "title": "Hialeah–Miami Springs Vertical Lift Bridge in 2014",
+    "creator": "Jorge Elías",
+    "creator_url": "https://www.flickr.com/people/28426323@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=57557470",
+    "source": "wikimedia"
   },
   "gallery-01": {
     "src": "assets/img/gallery-01.webp",
