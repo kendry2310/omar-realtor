@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Créditos fotográficos · [Nombre del Realtor]</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260813" />
+  <style>
+    .credits-wrap { max-width: 760px; margin-inline: auto; padding: var(--space-7) var(--space-3); }
+    .credits-back { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); display: inline-block; margin-bottom: var(--space-4); }
+    .credits-list { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
+    .credits-list li { border-top: 1px solid var(--line); padding-top: var(--space-2); font-size: 0.92rem; color: var(--muted); }
+    .credits-list strong { color: var(--ink); font-weight: 500; }
+    .credits-list a { text-decoration: underline; text-underline-offset: 2px; }
+    .credits-list a:hover { color: var(--accent); }
+    .credits-empty { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido-creditos">Saltar al contenido</a>
+  <main id="contenido-creditos" class="credits-wrap">
+    <a class="credits-back" href="index.html">← Volver al inicio</a>
+    <span class="eyebrow">Transparencia</span>
+    <h1 class="section-title">Créditos fotográficos</h1>
+    <p style="color: var(--muted); margin-top: var(--space-2); max-width: 60ch;">
+      Este sitio usa fotografía de referencia bajo licencias Creative Commons vía
+      <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>
+      mientras se incorporan fotografías reales del cliente. Cada imagen de referencia está marcada
+      en el sitio con la etiqueta "Imagen de referencia".
+    </p>
+    <ul class="credits-list" data-credits>
+      <li class="credits-empty">Cargando créditos…</li>
+    </ul>
+  </main>
+  <script defer src="lib/credits-render.js?v=20260813"></script>
+</body>
+</html>

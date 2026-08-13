@@ -1,0 +1,11 @@
+.claude/
+.impeccable/hook.cache.json
+
+# Original pre-optimization photos — the WebP versions actually used by the
+# site live in assets/img/. Keep these local only; re-run
+# tools/webp_convert.py if you need to regenerate assets/img/ from scratch.
+assets/photos/source/
+
+# OS junk
+.DS_Store
+Thumbs.db

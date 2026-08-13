@@ -1,0 +1,156 @@
+{
+  "hero": {
+    "src": "assets/img/hero.webp",
+    "title": "Steel and Glass House Palm Springs Architectual View",
+    "creator": "Chase Lindberg Photography",
+    "creator_url": "https://www.flickr.com/photos/48355364@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/48355364@N08/4425156542",
+    "source": "flickr"
+  },
+  "featured-01": {
+    "src": "assets/img/featured-01.webp",
+    "title": "Plage Colección My Wall",
+    "creator": "Plage Vinilos y Decoración",
+    "creator_url": "https://www.flickr.com/photos/59209848@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/59209848@N08/5428481197",
+    "source": "flickr"
+  },
+  "featured-02": {
+    "src": "assets/img/featured-02.webp",
+    "title": "Harry G. Miller Residence",
+    "creator": "Kvonachen",
+    "creator_url": "https://commons.wikimedia.org/w/index.php?title=User:Kvonachen&action=edit&redlink=1",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=51511135",
+    "source": "wikimedia"
+  },
+  "featured-03": {
+    "src": "assets/img/featured-03.webp",
+    "title": "White kitchen island",
+    "creator": "TChapman9",
+    "creator_url": "https://www.flickr.com/photos/125233660@N05",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/125233660@N05/14537639759",
+    "source": "flickr"
+  },
+  "featured-04": {
+    "src": "assets/img/featured-04.webp",
+    "title": "Client Work - Angular Landscape",
+    "creator": "Rooky Yootz",
+    "creator_url": "https://www.flickr.com/photos/91473712@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/91473712@N08/49512606707",
+    "source": "flickr"
+  },
+  "featured-05": {
+    "src": "assets/img/featured-05.webp",
+    "title": "Cozy bedroom with modern decor featuring comfortable bed and natural light in a warm setting",
+    "creator": "nenadstojkovicart",
+    "creator_url": "https://www.flickr.com/photos/202846129@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/202846129@N03/54584353283",
+    "source": "flickr"
+  },
+  "portrait-realtor": {
+    "src": "assets/img/portrait-realtor.webp",
+    "title": "Scott James Reeves Portrait – Professional Headshot of Scott James Reeves in Blue Blazer",
+    "creator": "Scott James Reeves",
+    "creator_url": "https://www.flickr.com/photos/198088095@N07",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=187250325",
+    "source": "wikimedia"
+  },
+  "areas-01": {
+    "src": "assets/img/areas-01.webp",
+    "title": "Free palm tree, blue sky",
+    "creator": "Unknown",
+    "creator_url": null,
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/5916523/photo-image-public-domain-plant-palm-tree",
+    "source": "rawpixel"
+  },
+  "areas-02": {
+    "src": "assets/img/areas-02.webp",
+    "title": "Sailboats dock daytime",
+    "creator": "Unknown",
+    "creator_url": null,
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/6037231/photo-image-public-domain-ocean-water",
+    "source": "rawpixel"
+  },
+  "areas-03": {
+    "src": "assets/img/areas-03.webp",
+    "title": "Beach Aerial",
+    "creator": "Humphrey Muleba",
+    "creator_url": "https://burst.shopify.com/@goodcitizen",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/beach-aerial-NPCFR4GDNF",
+    "source": "stocksnap"
+  },
+  "gallery-01": {
+    "src": "assets/img/gallery-01.webp",
+    "title": "Modern Design",
+    "creator": "Matt Bango",
+    "creator_url": "https://mattbango.photo",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/modern-design-WCEWXCO0AZ",
+    "source": "stocksnap"
+  },
+  "gallery-02": {
+    "src": "assets/img/gallery-02.webp",
+    "title": "Free new modern condominium living",
+    "creator": "Edward William Godwin",
+    "creator_url": "https://www.kristinhardwick.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/5914261/free-new-modern-condominium-living-room-interior",
+    "source": "rawpixel"
+  },
+  "gallery-03": {
+    "src": "assets/img/gallery-03.webp",
+    "title": "Glass Wall",
+    "creator": "The Building Envelope",
+    "creator_url": "https://stocksnap.io/author/129953",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/glass-wall-GID9EW0L7Z",
+    "source": "stocksnap"
+  },
+  "cta-bg": {
+    "src": "assets/img/cta-bg.webp",
+    "title": "Illuminated Residence at Night",
+    "creator": "QueenCityCebu",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:QueenCityCebu",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=195699629",
+    "source": "wikimedia"
+  }
+}

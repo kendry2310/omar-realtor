@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Nombre del Realtor] · Bienes Raíces Residenciales en Florida</title>
+  <meta name="description" content="[Nombre del Realtor] — bienes raíces residenciales en [Área de Servicio], Florida. Propiedades seleccionadas, acompañamiento cercano en cada compra o venta." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="[Nombre del Realtor] · Bienes Raíces Residenciales en Florida" />
+  <meta property="og:description" content="Propiedades seleccionadas y acompañamiento cercano en [Área de Servicio], Florida." />
+  <meta property="og:image" content="assets/img/hero.webp" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
+  <!-- Hero image priority -->
+  <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high" />
+
+  <link rel="stylesheet" href="styles.css?v=20260813" />
+
+  <!-- SEO local: schema.org RealEstateAgent — placeholders, completar con datos reales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "[Nombre del Realtor]",
+    "worksFor": { "@type": "Organization", "name": "[Nombre del Brokerage]" },
+    "areaServed": ["[Área de Servicio 1]", "[Área de Servicio 2]", "[Área de Servicio 3]"],
+    "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" },
+    "telephone": "[(XXX) XXX-XXXX]",
+    "url": "https://example.com"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Custom cursor (desktop, fine pointer only) -->
+  <div class="cursor" data-cursor-root aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-ring"></span>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" data-nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">[Nombre del Realtor]</a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a class="nav-link" href="#propiedades">Propiedades</a>
+        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link" href="#areas">Áreas</a>
+        <a class="nav-link" href="#proceso">Proceso</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav-cta" href="#contacto">Contactar</a>
+      <button class="nav-burger" type="button" data-nav-burger aria-expanded="false" aria-controls="nav-mobile" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen mobile menu -->
+  <nav id="nav-mobile" class="nav-mobile" data-nav-mobile aria-hidden="true" aria-label="Navegación móvil">
+    <a class="nav-mobile-link" href="#propiedades">Propiedades</a>
+    <a class="nav-mobile-link" href="#sobre-mi">Sobre mí</a>
+    <a class="nav-mobile-link" href="#areas">Áreas</a>
+    <a class="nav-mobile-link" href="#proceso">Proceso</a>
+    <a class="nav-mobile-link" href="#contacto">Contacto</a>
+    <a class="btn btn-mobile-cta" href="#contacto">Contactar</a>
+  </nav>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-hero>
+      <div class="hero-media">
+        <img class="hero-img" src="assets/img/hero.webp" alt="Fachada de vivienda contemporánea al atardecer — fotografía de referencia" fetchpriority="high" loading="eager" decoding="sync" />
+      </div>
+      <span class="ref-badge ref-badge--hero">Imagen de referencia</span>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title">[Nombre del Realtor]</h1>
+        <p class="hero-sub">Bienes raíces residenciales en Florida.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#propiedades">Ver propiedades</a>
+          <a class="btn btn-ghost-hero" href="#proceso">Conocer el proceso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement">
+      <p class="statement-text" data-reveal data-split="lines">Arquitectura, luz<br>y un lugar al que llamar <em>hogar</em>.</p>
+    </section>
+
+    <!-- ============ SPECIALTIES MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" data-marquee>
+        <span>RESIDENCIAL</span><span>·</span>
+        <span>LUJO</span><span>·</span>
+        <span>WATERFRONT</span><span>·</span>
+        <span>CONDOMINIOS</span><span>·</span>
+        <span>REUBICACIÓN</span><span>·</span>
+        <span>NUEVA CONSTRUCCIÓN</span><span>·</span>
+        <span>INVERSIÓN</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ============ FEATURED PROPERTIES ============ -->
+    <section class="section" id="propiedades">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Propiedades</span>
+        <h2 class="section-title">Selección actual</h2>
+      </div>
+
+      <div class="bento">
+        <article class="card card-property" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <div class="card-media">
+            <img class="card-img" src="assets/img/featured-02.webp" alt="Fachada de vivienda blanca de estilo mediterráneo — fotografía de referencia" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-meta">
+            <h3 class="card-title">Residencia Contemporánea</h3>
+            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
+          </div>
+        </article>
+
+        <article class="card card-property" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <div class="card-media">
+            <img class="card-img" src="assets/img/featured-04.webp" alt="Piscina infinita frente a residencia mediterránea — fotografía de referencia" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-meta">
+            <h3 class="card-title">Villa con Piscina Infinita</h3>
+            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
+          </div>
+        </article>
+
+        <article class="card card-property" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <div class="card-media">
+            <img class="card-img" src="assets/img/featured-03.webp" alt="Cocina moderna con isla de mármol — fotografía de referencia" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-meta">
+            <h3 class="card-title">Cocina de Autor</h3>
+            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
+          </div>
+        </article>
+
+        <article class="card card-property" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <div class="card-media">
+            <img class="card-img" src="assets/img/featured-01.webp" alt="Sala de estar minimalista con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-meta">
+            <h3 class="card-title">Interior Minimalista</h3>
+            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
+          </div>
+        </article>
+
+        <article class="card card-property" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <div class="card-media">
+            <img class="card-img" src="assets/img/featured-05.webp" alt="Dormitorio principal con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
+          </div>
+          <div class="card-meta">
+            <h3 class="card-title">Suite Principal</h3>
+            <p class="card-loc">[Ciudad, FL]</p>
+            <p class="card-data">— hab · — baños · — m² <span class="card-price">Precio a consultar</span></p>
+          </div>
+        </article>
+      </div>
+
+      <p class="idx-note">Arquitectura preparada para integración MLS/IDX. Las propiedades mostradas son fotografías de referencia, no listados reales.</p>
+    </section>
+
+    <!-- ============ ABOUT THE REALTOR ============ -->
+    <section class="section about" id="sobre-mi">
+      <div class="about-figure" data-reveal-mask>
+        <span class="ref-badge">Imagen de referencia</span>
+        <img src="assets/img/portrait-realtor.webp" alt="Retrato profesional — fotografía de referencia, a sustituir por foto real" loading="lazy" decoding="async" />
+      </div>
+      <div class="about-text">
+        <span class="eyebrow" data-reveal>Sobre mí</span>
+        <h2 class="section-title" data-reveal>[Nombre del Realtor]</h2>
+        <span class="ref-badge ref-badge--inline" data-reveal>Contenido provisional</span>
+        <p class="about-bio" data-reveal>Un enfoque personal, atento a los detalles y a las personas detrás de cada decisión inmobiliaria. Cada propiedad se presenta con la misma dedicación: la de un hogar propio.</p>
+        <dl class="credentials" data-reveal>
+          <div class="credential"><dt>Licencia</dt><dd>FL #[XXXXXX]</dd></div>
+          <div class="credential"><dt>Brokerage</dt><dd>[Nombre del Brokerage]</dd></div>
+          <div class="credential"><dt>Especialización</dt><dd>[Residencial / Lujo / Waterfront]</dd></div>
+          <div class="credential"><dt>Idiomas</dt><dd>[Español, Inglés]</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ AREAS SERVED ============ -->
+    <section class="section-flush" id="areas">
+      <div class="section-head section-head--pad" data-reveal>
+        <span class="eyebrow">Áreas de servicio</span>
+        <h2 class="section-title">Dónde trabajamos</h2>
+      </div>
+      <div class="areas">
+        <a class="area-card" href="#contacto" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img class="area-img" src="assets/img/areas-01.webp" alt="Palmeras contra cielo azul — fotografía de referencia" loading="lazy" decoding="async" />
+          <span class="area-overlay" aria-hidden="true"></span>
+          <span class="area-name">[Área de Servicio 1]</span>
+        </a>
+        <a class="area-card" href="#contacto" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img class="area-img" src="assets/img/areas-02.webp" alt="Marina con veleros — fotografía de referencia" loading="lazy" decoding="async" />
+          <span class="area-overlay" aria-hidden="true"></span>
+          <span class="area-name">[Área de Servicio 2]</span>
+        </a>
+        <a class="area-card" href="#contacto" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img class="area-img" src="assets/img/areas-03.webp" alt="Vista aérea de costa — fotografía de referencia" loading="lazy" decoding="async" />
+          <span class="area-overlay" aria-hidden="true"></span>
+          <span class="area-name">[Área de Servicio 3]</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ BUYING / SELLING PROCESS ============ -->
+    <section class="section process" id="proceso">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Proceso</span>
+        <h2 class="section-title">Comprar o vender, con claridad</h2>
+      </div>
+      <ol class="process-list">
+        <li class="process-item" data-reveal>
+          <span class="process-num">01</span>
+          <div><h3 class="process-title">Consulta inicial</h3><p class="process-text">Escuchamos tus objetivos y evaluamos las posibilidades reales.</p></div>
+        </li>
+        <li class="process-item" data-reveal>
+          <span class="process-num">02</span>
+          <div><h3 class="process-title">Estrategia</h3><p class="process-text">Valoración, posicionamiento y un plan de acción a medida.</p></div>
+        </li>
+        <li class="process-item" data-reveal>
+          <span class="process-num">03</span>
+          <div><h3 class="process-title">Exposición</h3><p class="process-text">Fotografía cuidada, marketing dirigido y visibilidad cualificada.</p></div>
+        </li>
+        <li class="process-item" data-reveal>
+          <span class="process-num">04</span>
+          <div><h3 class="process-title">Negociación</h3><p class="process-text">Cada oferta se maneja con visión, datos y cuidado por tu interés.</p></div>
+        </li>
+        <li class="process-item" data-reveal>
+          <span class="process-num">05</span>
+          <div><h3 class="process-title">Cierre</h3><p class="process-text">Acompañamiento cercano hasta la firma final.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section-flush gallery">
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--tall" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img src="assets/img/gallery-01.webp" alt="Detalle arquitectónico de cubierta al atardecer — fotografía de referencia" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="gallery-item" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img src="assets/img/gallery-02.webp" alt="Comedor moderno con luz natural — fotografía de referencia" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="gallery-item" data-reveal>
+          <span class="ref-badge">Imagen de referencia</span>
+          <img src="assets/img/gallery-03.webp" alt="Fachada de vidrio moderna al atardecer — fotografía de referencia" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+      <!-- Testimonials: sección omitida intencionalmente — se incorporará cuando existan testimonios reales de clientes -->
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <img class="cta-bg" src="assets/img/cta-bg.webp" alt="Residencia iluminada al anochecer — fotografía de referencia" loading="lazy" decoding="async" />
+      <div class="cta-tint" aria-hidden="true"></div>
+      <div class="cta-inner" data-reveal>
+        <h2 class="cta-title">Hablemos de tu próximo paso.</h2>
+        <a class="btn btn-primary" href="#contacto">Agendar una consulta</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contacto">
+      <div class="contact-info" data-reveal>
+        <span class="eyebrow">Contacto</span>
+        <h2 class="section-title">Conversemos</h2>
+        <ul class="contact-list">
+          <li><span class="contact-label">Teléfono</span><a href="tel:">[(XXX) XXX-XXXX]</a></li>
+          <li><span class="contact-label">Email</span><a href="mailto:">[correo@dominio.com]</a></li>
+          <li><span class="contact-label">Oficina</span><span>[Dirección de la oficina], FL [XXXXX]</span></li>
+          <li><span class="contact-label">Horario</span><span>Lunes – Viernes · [Horario a confirmar]</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" data-reveal novalidate>
+        <div class="field">
+          <label for="f-name">Nombre</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="f-phone">Teléfono</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="field">
+          <label for="f-message">Mensaje</label>
+          <textarea id="f-message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="btn btn-primary btn-submit" type="submit">
+          <span class="btn-label">Enviar mensaje</span>
+        </button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">[Nombre del Realtor]</p>
+        <p class="footer-brokerage">[Nombre del Brokerage] · FL Lic. #[XXXXXX]</p>
+      </div>
+      <nav class="footer-social" aria-label="Redes sociales">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="footer-eho">
+      <svg class="eho-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <path d="M3 11.5 12 4l9 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.5 10v9h13v-9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="9.5" y1="14" x2="14.5" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="9.5" y1="16.5" x2="14.5" y2="16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <p>Igualdad de Oportunidad de Vivienda · Equal Housing Opportunity. Cada oficina es de propiedad y operación independiente.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> [Nombre del Realtor]. Todos los derechos reservados.</p>
+      <p class="footer-credits">Fotografía de referencia bajo licencias Creative Commons. <a href="creditos.html">Créditos fotográficos →</a></p>
+    </div>
+  </footer>
+
+  <!-- libs first (defer keeps order) -->
+  <script defer src="lib/gsap.min.js"></script>
+
+  <!-- brand data -->
+  <script defer src="lib/manifest.js"></script>
+
+  <!-- entry point -->
+  <script defer src="main.js?v=20260813"></script>
+</body>
+</html>
