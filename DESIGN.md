@@ -73,9 +73,10 @@ Composición adaptada de un componente de referencia de 21st.dev (un hero cinema
 - **Scrim + viñeta direccionales**: degradado de arriba hacia abajo en móvil (el texto va encima), de izquierda a derecha en desktop (el texto va al lado) — nunca un overlay plano uniforme.
 - **Zoom ambiental**: `transform: scale()` de 1 a 1.09 en 28s, `ease-in-out infinite alternate` — el "acercamiento y alejamiento" del componente original, solo con `transform` (nunca layout) y pausado bajo `prefers-reduced-motion`.
 - **Grano sutil** (SVG turbulence, opacidad 0.05, `mix-blend-mode: overlay`) para la sensación de profundidad/cine sin coste de rendimiento de un shader real.
-- Texto mínimo: nombre del Realtor (placeholder) + una línea + dos CTA (uno sólido, uno ghost) — sin kicker, sin bloques de texto.
+- Texto mínimo: kicker + nombre + una línea + dos CTA (uno sólido, uno ghost) + una nota de disclosure en flujo normal (no absoluta, para no competir con la tarjeta del agente en ningún breakpoint).
+- **Tarjeta del agente** (`.hero-agent`): retrato enmarcado de Omar con borde de hairline dorado y sombra, como una fotografía apoyada en la escena — no un recorte. Centrada abajo en móvil, centrada verticalmente a la derecha en desktop (≥720px). Enlaza a `#sobre-mi`. Es el elemento de firma de esta iteración: la cara del agente es la tesis del Hero ("un realtor te ayuda a elegir mejor"), tan importante como la fotografía de la propiedad.
 
-Clases relevantes: `.hero`, `.hero-media`/`.hero-img`, `.hero-vignette`, `.hero-scrim`, `.hero-grain`, `.hero-inner`, `.btn-ghost-hero`.
+Clases relevantes: `.hero`, `.hero-media`/`.hero-img`, `.hero-vignette`, `.hero-scrim`, `.hero-grain`, `.hero-inner`, `.hero-disclosure`, `.hero-agent`/`.hero-agent-frame`/`.hero-agent-caption`, `.btn-ghost-hero`.
 
 ## Colors
 

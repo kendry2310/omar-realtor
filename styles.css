@@ -359,7 +359,43 @@ ul, ol { list-style: none; padding: 0; }
   box-shadow: 0 16px 32px rgba(26,24,21,0.28);
 }
 
-.ref-badge--hero { top: auto; left: auto; bottom: 1.2rem; right: 1.2rem; }
+.hero-disclosure {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.04em;
+  color: rgba(250,247,242,0.55); margin-top: var(--space-3); max-width: 34ch;
+}
+
+/* Hero signature: a small framed portrait of the agent, resting in the
+   scene like a photograph rather than a cut-out — the one bold new element,
+   everything else in the hero stays as it was. */
+.hero-agent {
+  position: absolute; z-index: 3;
+  left: 50%; bottom: var(--space-4);
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.55rem;
+  text-decoration: none;
+}
+.hero-agent-frame {
+  display: block; width: 96px; aspect-ratio: 4/5; overflow: hidden;
+  border: 1px solid var(--accent);
+  box-shadow: 0 20px 40px rgba(26,24,21,0.45), 0 0 0 5px rgba(250,247,242,0.08);
+  background: var(--ink);
+  transition: transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft);
+}
+.hero-agent-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
+.hero-agent:hover .hero-agent-frame {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 54px rgba(26,24,21,0.5), 0 0 0 5px rgba(250,247,242,0.14);
+}
+.hero-agent-caption { text-align: center; }
+.hero-agent-name { display: block; font-family: var(--font-display); font-size: 0.92rem; color: var(--bg); }
+.hero-agent-tag {
+  display: block; font-family: var(--font-mono); font-size: 0.6rem;
+  letter-spacing: 0.09em; text-transform: uppercase; color: rgba(250,247,242,0.62); margin-top: 0.15rem;
+}
+@media (min-width: 720px) {
+  .hero-agent { left: auto; right: var(--space-4); bottom: auto; top: 50%; transform: translateY(-50%); }
+  .hero-agent-frame { width: clamp(140px, 13vw, 210px); }
+}
 
 @media (min-width: 720px) {
   .hero-img { object-position: 68% 42%; }

@@ -78,13 +78,13 @@
   },
   "city-miami": {
     "src": "assets/img/city-miami.webp",
-    "title": "Biscayne Bay south",
-    "creator": "Averette",
-    "creator_url": "https://commons.wikimedia.org/wiki/User:Averette",
+    "title": "Downtown Miami at Sunset",
+    "creator": "Giuseppe Milo",
+    "creator_url": "https://500px.com/pixael",
     "license": "by",
     "license_version": "3.0",
     "license_url": "https://creativecommons.org/licenses/by/3.0/",
-    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=4066638",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=71471295",
     "source": "wikimedia"
   },
   "city-palmbeach": {
@@ -100,13 +100,13 @@
   },
   "city-hialeah": {
     "src": "assets/img/city-hialeah.webp",
-    "title": "Hialeah–Miami Springs Vertical Lift Bridge in 2014",
-    "creator": "Jorge Elías",
-    "creator_url": "https://www.flickr.com/people/28426323@N08",
-    "license": "by",
-    "license_version": "2.0",
-    "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=57557470",
+    "title": "Hialeah Park entrance",
+    "creator": "Ebyabe",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:Ebyabe",
+    "license": "by-sa",
+    "license_version": "3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=15066717",
     "source": "wikimedia"
   },
   "gallery-01": {
